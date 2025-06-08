@@ -1,11 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.Domain", "src\Recipes.Domain\Recipes.Domain.csproj", "{F8446A4E-4200-4CBD-A942-09405EAB0A0B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.Web", "src\Recipes.Web\Recipes.Web.csproj", "{8BF882D4-49AA-4A38-ACB4-A4613CCD025F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.Presenters", "src\Recipes.Presenters\Recipes.Presenters.csproj", "{4F586534-FFCD-4FB8-ACEE-E41738DB554B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56DC2755-9B01-41C7-8646-27949623A530}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		editorconfig = editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.Contracts", "src\Recipes.Contracts\Recipes.Contracts.csproj", "{65ED232C-7E26-49EF-A5A5-A86B6D81A244}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +29,27 @@ Global
 		{F8446A4E-4200-4CBD-A942-09405EAB0A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8446A4E-4200-4CBD-A942-09405EAB0A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8446A4E-4200-4CBD-A942-09405EAB0A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF882D4-49AA-4A38-ACB4-A4613CCD025F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF882D4-49AA-4A38-ACB4-A4613CCD025F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF882D4-49AA-4A38-ACB4-A4613CCD025F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF882D4-49AA-4A38-ACB4-A4613CCD025F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F586534-FFCD-4FB8-ACEE-E41738DB554B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F586534-FFCD-4FB8-ACEE-E41738DB554B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F586534-FFCD-4FB8-ACEE-E41738DB554B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F586534-FFCD-4FB8-ACEE-E41738DB554B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ED232C-7E26-49EF-A5A5-A86B6D81A244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ED232C-7E26-49EF-A5A5-A86B6D81A244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ED232C-7E26-49EF-A5A5-A86B6D81A244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ED232C-7E26-49EF-A5A5-A86B6D81A244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F8446A4E-4200-4CBD-A942-09405EAB0A0B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8BF882D4-49AA-4A38-ACB4-A4613CCD025F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4F586534-FFCD-4FB8-ACEE-E41738DB554B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{65ED232C-7E26-49EF-A5A5-A86B6D81A244} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9138A93D-9C60-4B3C-9403-205A149CCEBD}
