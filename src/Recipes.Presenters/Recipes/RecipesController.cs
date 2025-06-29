@@ -1,16 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
-using Recipes.Contracts;
+using Recipes.Application.Recipes;
+using Recipes.Contracts.Recipes;
 
-namespace Recipes.Presenters
+namespace Recipes.Presenters.Recipes
 {
     [ApiController]
     [Route("[controller]")]
     public class RecipesController : ControllerBase
     {
+
+        private readonly IRecipesService _recipesService;
+
+        public RecipesController(IRecipesService recipesService)
+        {
+            _recipesService = recipesService;
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateRecipeDto recipeDto, CancellationToken cancellationToken)
         {
-            return Ok("Recipe created");
+            var recipeId = await _recipesService.Create(recipeDto, cancellationToken).ConfigureAwait(false);
+
+            return Ok(recipeId);
         }
 
         [HttpGet]
