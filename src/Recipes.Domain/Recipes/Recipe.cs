@@ -1,4 +1,4 @@
-﻿namespace Recipes.Domain
+﻿namespace Recipes.Domain.Recipes
 {
     public class Recipe
     {
